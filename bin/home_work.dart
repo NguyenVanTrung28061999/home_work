@@ -20,7 +20,7 @@ countNumber() {
   var countNumberThree = 0;
   var countNumberFive = 0;
   for (var i = 1; i < 1000; i++) {
-    if (checkItemNumberDivisionFive(i) == true) countNumberThree++;
+    if (checkItemNumberDivisionThree(i) == true) countNumberThree++;
     if (checkItemNumberDivisionFive(i) == true) countNumberFive++;
   }
   print("Tong so chia het cho 3 là: $countNumberThree");
