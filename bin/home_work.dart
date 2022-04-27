@@ -44,12 +44,13 @@ sumDivisionThree(List list) {
 }
 
 //// bài tap 3
-printInfomation(){
+printInfomation() {
   var classInfomation = {
-    "id":12,
-    "name":"Báo Flutter 1.2",
-    "description":"Lớp học lập trình flutter,hotline:0349582808"
+    "id": 12,
+    "name": "Báo Flutter 1.2",
+    "description": "Lớp học lập trình flutter,hotline:0349582808"
   };
-  var result = classInfomation['description'].toString().split(',').last;
+  var result =
+      classInfomation['description'].toString().split(',').last.split(':').last;
   print(result);
 }
