@@ -1,14 +1,14 @@
 void main() {
-  printSoChan();
-  countNumber();
+  printSoChan(1000);
+  countNumber(1000);
   sumDivisionThree([4, 3, 10, 9, 15, 7, 6, 5, 8]);
   printInfomation();
 }
 
 // bai tap 0
-printSoChan() {
+printSoChan(int num) {
   var tong = 0;
-  for (var i = 1; i < 1000; i++) {
+  for (var i = 1; i < num; i++) {
     if (i % 2 == 0 && (tong + i) < 400) {
       print(i);
     }
@@ -16,10 +16,10 @@ printSoChan() {
 }
 
 // bai tap 1
-countNumber() {
+countNumber(int num) {
   var countNumberThree = 0;
   var countNumberFive = 0;
-  for (var i = 1; i < 1000; i++) {
+  for (var i = 1; i < num; i++) {
     if (checkItemNumberDivisionThree(i) == true) countNumberThree++;
     if (checkItemNumberDivisionFive(i) == true) countNumberFive++;
   }
