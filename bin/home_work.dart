@@ -50,7 +50,11 @@ printInfomation() {
     "name": "Báo Flutter 1.2",
     "description": "Lớp học lập trình flutter,hotline:0349582808"
   };
-  var result =
-      classInfomation['description'].toString().split(',').last.split(':').last;
+  //code ban đầu
+  // var result =
+  //     classInfomation['description'].toString().split(',').last.split(':').last;
+
+  //code cải tiến
+  var result = classInfomation['description'].toString().split(':').last;
   print(result);
 }
